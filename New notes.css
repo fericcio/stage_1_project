@@ -1,0 +1,83 @@
+
+body {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#title	{
+		display:flex;
+		height: 300px;
+		font-size: x-large;
+}
+.text {
+	justify-content:flex-start;
+}
+.image {
+  width: 100px;
+  height: 150px;
+  margin: auto;
+}
+.separator	{
+		width: 100%;
+		height: 15px;
+		background: linear-gradient(to right, red , yellow);
+}
+h1:not(.text)	{
+	text-align: center;
+	color: #0A0881;
+	text-decoration: underline;
+}
+h2	{
+	margin-left:20px;
+}
+.TOC {
+	margin: auto;
+	width: 600px;
+	height: 200px;
+	font-size: large;
+	display:flex;
+}
+.TOCtitle	{
+  width: 300px;
+  height: 100px;
+  margin: auto;
+}
+.vertical	{
+	width: 2px;
+  background-color: black;
+  height: 90%;
+  float: left;
+}
+.paragraf	{
+	background-color: #A1F3C6;
+	border-radius:30px;
+	padding: 10px;
+	margin: 10px auto;
+}
+.subparagraf	{
+	background-color: #FFFFFF;
+	padding: 5px;
+	margin: 20px;
+	border-radius: 20px;
+}
+#boxmodel	{
+	display:flex;
+}
+#boxtext	{
+	margin-right: 40px;
+    text-align: justify;
+}
+.textbox	{
+    background-color: #F7D162;
+    padding: 5px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: medium;
+}
+.span.code 	{
+	font-family: Arial;
+    background-color: #BBBBBB;
+    padding: 2px 4px;
+    font-weight: bold;
+}

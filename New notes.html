@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang=en>
+
+  <head>
+  <!-- This is the HEADER section, dictating the name of this webpage. Will not appear in the web page -->
+  
+    <title> Notes from Intro to programming course</title>
+    <link rel="stylesheet" type="text/css" href="New notes.css">
+  </head>
+
+  <body>
+  <!--This is the BODY section dictating the content of the webpage-->
+  <!--Title of the webpage-->
+    <a href="Top"></a>
+    <div id="title">
+      <h1 class="text">
+        <strong>Intro to programming<br>Nanodegree course<br>Federico's Notes</strong>
+      </h1>
+      <div class="image">
+        <img src="Image/Caution.jpg" alt="caution sign about machines">
+      </div>
+    </div>
+    <div class="separator">
+    </div>
+    <br>
+    <br>
+<!---Table of content with links-->
+    <div class="TOC">
+      <h2 class="TOCtitle">
+        <u>Table of Content</u>
+      </h2>
+      <div class="vertical">
+      </div>
+      <div class="TOCcontent">
+        <ol>
+          <li><a href="#StageZero">Basic concepts</a></li>
+          <li><a href="#StageOne">Stage One: make a web page</a></li>
+          <li><a href="#StageTwo">Stage Two: start programming</a></li>
+          <li><a href="#StageThree">Stage Three:</a></li>
+          <li><a href="#StageFour">Stage Four:</a></li>
+          <li><a href="#StageFive">Stage Five:</a></li>
+        </ol>
+      </div>
+    </div>
+<!--Here starts section Zero-->
+    <h1>
+      <a id="StageZero"> <strong>Basic concepts</strong></a>
+    </h1>
+    <div class="paragraf">
+      <h2>What is the WWW</h2>
+      <div class="subparagraf">
+        <p><a href="https://en.wikipedia.org/wiki/World_Wide_Web">From Wikipedia:</a> The World Wide Web (www) is an open source information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet. It has become known simply as the Web.</p>
+        <p>The main components of the web are:</p>
+          <ul style="list-style-type:circle">
+            <li><b>Server:</b> physical hard drive where the internet content is stocked. The vast majority of this content are HTML documents (Hyper Text Markup Language)</li>
+            <li><b>Browser:</b> software used to  diplay files found on the internet</li>
+            <li><b>The internet:</b> HTML documents stored in servers around the world are reacheble through the world largest computer network</li>
+            <li><b>URL:</b> is used to specify an addresses on the internet</li>
+             <li><b>HTTP:</b> this is the protocol used by computers to communicate over the internet</li>
+          </ul>
+      </div>
+      <h2>Thinking like a Programmer</h2>
+      <div class="subparagraf">
+          <p><u>Procedural thinking</u> creating perfect clear and unambiguous instructions for a computer to follow</p>
+          <p><u>Abstract thinking</u> finding similarities or generalities amongst similarly different things</p>
+          <p><u>Systematic debugging</u> identify problems or potential problems and trak down potential causes</p>
+          <p><u>Technological empathies</u> basic understanding of how things work for a computer</p>
+          <p><u>Systems thinking</u> the process of breaking down a big problem or idea into smaller pieces. Programmers often create a plan on paper for how the program will work. It inolves big picture thinking and decision making about a problem and how different pieces of a program can work together to solve it</p>
+      </div>
+      <h2>The HTML (Hyper Text Markup Language)</h2>
+      <div class="subparagraf">
+          <p><a href="http://www.w3schools.com/html/html_intro.asp">W3Schools definition:</a> HTML is a markup language for describing web documents (web pages). HTML stands for Hyper Text Markup Language. A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different document content.
+          </p>
+          <h3>The HTML is composed of:</h3>
+            <ul style="list-style-type: disc">
+              <li><b>Contents:</b> what appears on a browser</li>
+              <li><b>Markups:</b> it defines how the content will appear</li>
+              <li><b>References to other docs:</b> like immages or videos</li>
+              <li><b>Links to other pages</b></li>
+            </ul>
+          <h3>The markups are:</h3>
+            <ul style="list-style-type:circle">
+              <li><b>Tag:</b> An HTML tag is always contained within angled brackets. Most of the tags have an opening and a closing tag. Some tags called <em>void</em> do not require a closing tag.</li>
+              <li><b>Element:</b> an HTML element refers to everything within a set of opening and closing tags</li>
+              <li><b>Attribute:</b> This is a property of an HTML element
+            </ul>
+          <h3>HTML elements can be:</h3>
+            <ul style="list-style-type:disc">
+             <li><span style="color:blue"><b>Inline:</b></span> &lt;span&gt;</li>
+             <li><span style="color:red"><b>Block:</b></span> &lt;div&gt;</li>
+            </ul>
+        </div>
+      </div>
+    <!---Here starts the part relative to Stage One, make a webpage-->
+    <h1>
+     <a id="StageOne"> <strong>Make a web page</strong></a>
+    </h1>
+    <div class="paragraf">
+      <h2>Creating a structured document</h2>
+      <div class="subparagraf">
+        <p>Keeping in mind that:</p>
+          <ul style="list-style-type:disc">
+            <li>HTML file provide the structure of the webpage.</li>
+            <li>CSS file provide the style of the page</li>
+            <li>Java Script files are the interactive components</li>
+          </ul>
+        <P>In order for these three type of files to properly interact togheter, the structure of the webpage or<strong> the HTML file</strong> needs to be built according to a specific set of rules</p>
+        <h3>The Document Object Model (DOM)</h3>
+            <p><a href="https://en.wikipedia.org/wiki/Document_Object_Model">From Wikipedia:</a> The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents. The nodes of every document are organized in a tree structure, called the DOM tree. The DOM is an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
+          <h3>Boxifying Design</h3>
+            <p>As everything on a web page is a box, The idea is to break down a page as much as possible, starting from the big page (the overall box including the all page) to the smallest</p>
+          <h3>&lt;div&gt; and &lt;id&gt; attributes</h3>
+            <p>In order to divide everyting in boxes we need assign identifiying values to similar elements of our HTML document.</p>
+        </div>
+      </div>
+      <div class="paragraf">
+        <h2 class="title">Adding CSS style and HTML structure</h2>
+        <div class="subparagraf">
+          <p>CSS or <strong>Cascading  Style Sheets</strong> provide the style to our HTML documents. CSS is code written to control the "style" of HTML elements. What is very important is avoid repetitions between the two docs.</p>
+          <p>"Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.</p>
+          <p>Cascading is known as the idea of <strong>inheritance</strong> which is the mechanism by which properties are applied not only to a specified element, but also to its descendants.</p>
+          <h3>Selector</h3>
+            <p>Defines which elements of a page a particular style will apply to. A Selector is the first thing you write. A style can be written for a specific set of selectors (paragraph, class, h, IDs, etc). Everything between these curly braces will be interpreted as a "rule" that should be applied to every selector element.</p>
+          <div id="boxmodel">
+            <div id="boxtext"><h3>The box model</h3>
+              <ul>
+                <li>Content: this is the image or text appearing on the website. It sits at the center of the box and the other layers serves to protect the content so that other images or text wont over lap</li>
+                <li>Padding: clears an area around the content, it is affected by the background color of the box. Space inside the box that protects the content</li>
+                <li>Border: the goes around the content and padding. Its color is affected by the color propriety of the box</li>
+                <li>Margin: this clear an area around the border and it does not have a color it is completely transparent. A sort of the space around the boxes</li>
+              </ul>
+            </div>
+            <div id="boxgif">
+              <img src="image/box-model.gif" alt="Box model image">
+            </div>
+          </div>
+          <p>The size of your actual element = the size of content+padding+border+margin. This makes a bit difficult to understand how much space the box will actually take in the browsers. An easier way is to use in CSS the rule</p> <pre><code> box-sizing:border box; </code></pre>
+          <h3>Box positioning</h3>
+          <ul>
+            <li>Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.</li>
+            <li>Adding the rule <pre><code>display:flex;</code></pre> to the appropriate CSS will override this behavior and let divs appear next to each other.
+          </ul>
+          <h3>Coding pattern</h3>
+          <p>Since the beginning of the coding for this lesson we have been following a very simple pattern: <strong>Code, Test, Refine.</strong> Therefore when starting a new project:
+            <ol>
+              <li>LOOK FOR THE NATURAL BOXES</li>
+              <li>Look for repeated styles and semantic elements</li>
+              <li>Write your HTML</li>
+              <li>Apply styles (From the biggest to the smallest)</li>
+              <li>Fix small things</li>
+            </ol>
+        </div>
+      </div>
+    <h1>
+     <a id="StageTwo"> <strong>Start programming</strong></a>
+    </h1>
+    <div class="paragraf">
+      <div class="title"><h2>Introduction to Serious Programming</h2>
+      </div>
+      <div class="subparagraf">
+        <p><u>Computer science</u> is about learning how to solve problems breaking them in smaller pieces and precisely and mechanically describe a sequence of steps that you can use to solve each piece. And these steps can be processed by a computer.</p>
+        <p>Programming is grounded in arithmetic, so it's important to know how programming languages do simple math.</p>
+        <pre><code>
+          print 3
+          print 1 + 1
+        </code></pre>
+        <h3>Basic terminology:</h3>
+        <ul>
+          <li><strong>Computer: </strong>a machine that needs a program to work and do computations. Computers can do millions of computations in seconds.</li>
+          <li><strong>Program:</strong> A conputer can not do anything without a program. A program are instructions to a computer on what to do precise sequence of steps</li>
+          <li><strong>Computation: </strong>is any type of calculation that follows a well defined model understood and expressed as, for example, algorithim, or a protocol.</li>
+          <li><strong>High-level language: </strong>Python is an high-level language. This means that we can use it to write our programs that will be interpreted and executed by another program which is a Python interpretor that will translate the program in a langauge that the computer can understand directly. So instead of having to write a program that runs directly on a computer, the program we will write will be an input to the Python program which runs on the computer. </li>
+        <div class="textbox">
+          <p><i>"High-level language" refers to the higher level of abstraction from machine language. Rather than dealing with registers, memory addresses and call stacks, high-level languages deal with variables, arrays, objects, complex arithmetic or boolean expressions, subroutines and functions, loops, threads, locks, and other abstract computer science concepts, with a focus on usability over optimal program efficiency. Unlike low-level assembly languages, high-level languages have few, if any, language elements that translate directly into a machine's native opcodes. Other features, such as string handling routines, object-oriented language features, and file input/output, may also be present. </i><a href="https://en.wikipedia.org/wiki/High-level_programming_language"> Wikipedia</a></p>
+        </div>
+          <li><strong>Input: </strong>litteraly, to put data into a computer</li>
+          <li><strong>Interpreter: </strong>An Interpreter is a program that implements or simulates a virtual machine using the base set of instructions of a programming language as its machine language. You can also think of an Interpreter as a program that implements a library containing the implementation of the basic instruction set of a programming language in machine language. An Interpreter reads the statements of a program, analyzes them and then executes them on the virtual machine by calling the corresponding instructions of the library. </li>
+        </ul>
+        <p>In these sentences there are 3 of the 5 ways of thinking like a programmer:</p>
+        <ul>
+          <li>Procedural thinking;</li>
+          <li>Technological emphaty;</li>
+          <li>Abstract thinking;</li>
+        </ul>
+        <p>For example, to build a search engine, we can divide the project in three smaller problems</p>
+          <ol>
+            <li>Find data (crawling web pages)</li>
+            <li>Build an index (to be able to respond quickly to serch queries)</li>
+            <li>Rank pages (so that you get the best result for specific queries)</li>
+          </ol>
+        <p>Why there has been the need to create a computer languages instead of just using natural languages such as english or mandarin?
+          <ol>
+            <li><strong>Ambiguty:</strong> Human languages can be ambigus and computers need an absolute precise language</li>
+            <li><strong>Verbosity:</strong> writing a program would take so much text in a natual language</li>
+          </ol>
+          <p> Each language has its own <strong>grammar</strong>: as any natural languages, Python has its own rules.</p>
+          <p>In order to define the grammar rules of any programming language, we shall use a method called Backus-Naur Form invented by John Backus and shortly after improved by Naur.</p>
+          <h3>The Backus-Naur Form method(BNF)</h3>
+          <p>We can describe an infinite large language just following the rules of the replacement grammar.This uses to left side a <code><strong>non terminal</strong></code> than is followed by a <code><strong>replacement</strong></code> until you get all the <code><strong>replacement</strong></code> to <code><strong>terminal</strong></code></p>
+          <P>Derivation: replacement language.
+          Terminal vs non Termnal: you are not done until all the values are terminal</p>
+          A basic Python gramar with a recursive definition:
+          Expression &#8594; Expression Operator Expression
+          <ul>
+            <li>Expression &#8594; Number</li>
+            <li>Operator &#8594; *</li>
+            <li>Operator &#8594; +</li>
+            <li>Number &#8594; 0,1,2,3,4 etc</li>
+            <li>Expression &#8594; (Expression)</li>
+          </ul>
+          <p>
+          Recursive grammar uses rules like the ones above are very powerful. We only need few rulse to descrive a big language. A recursive definition needs an at least two rules: one that can keep you going and one that stops you. The Python language used in the course can be described by the grammar above</p>
+          <h3>Numbers in Python<h3>
+          <p>Numbers that know about their decimals (2.0) are called <strong>integers</strong>. On the other hand, numbers that do not know about therir decimal (1, 2, 345) are called <strong>floating</strong>.</p>
+      </div>
+    </div>
+    <div class="paragraf">
+       <h2>Stage 2.2 Variables and Strings</h2>
+      <div class="subparagraf">
+        <h3>Variables</h3>
+        <p>Programmers use <strong>variables</strong> to represent values in their code. This makes code easier to read by telling others what values mean. It also makes code easier to write by cutting down on potentially complicated numbers that repeat in our code.</p>
+        <p>We sometimes call numbers without a variable "<i>magic numbers</i>". It's best to reduce the amount of "<i>magic numbers</i>" in our code</p>
+        <p><strong>Variable:</strong> we can use variables introducing a <code> &lt;name&gt; </code> and through an assigment statement.
+        <p>Assignment Statement by the sign <strong>=</strong>  Example <code>name = expression</code></p>
+        <pre>
+          speed_of_light = 299792458.0
+          billionth = 1.0 / 1000000000.0
+          nanostick = speed_of_light * billionth * 100
+          print nanostick
+        </pre>
+        <p>The value of a variable can easily be changed thgrough another assign statement</p>
+         <pre>
+          days = 7*7
+          print days #This will print 48
+          days = 48
+          print days #This will print 48
+          days = days -1
+          print days #Here the variable days now will refer to a new value, 47
+        </pre>
+        <div class="textbox">A variable is something that holds a value that may change. In simplest terms, a variable is just a box that you can put stuff in. You can use variables to store all kinds of stuff, but for now, we are just going to look at storing numbers in variables.
+        </div>
+        <p>If we use a variable that has not been assigned Python will report it as an error as the variables has not been defined.
+      </div>
+      <div class="subparagraf"><h3>Strings</h3>
+      <p><strong>String:</strong> the sequence of characters between single or double quotes.</p>
+      <p>If you start with single quote (<i>'string'</i>) - you have to finish with single quotes (<i>&#39;string&#39;</i>). The same applies for double quotes (<i>"string"</i>).
+      Examples of strings:
+      <pre>
+      &#39;I am a string!&#39;
+      &#34;I am a string!&#34;
+      &#34;I'm a string!&#34;
+      </pre>
+      If your start with a double quote(&#34; &#34;), it is possible to use the single quote (&#39; &#39;) among the characters.</p>
+      <p>It is a convention that <strong>variables</strong> do not start with capital letters</p>
+      <br>
+      <h3>Introducing operators with strings (+ and *)</h3>
+      <p>We have seen it on numbers and now on strings, + can be used with strings. It does a concatenation of the strings <strong>&lt;string&gt; + &lt;string&gt; </strong>the result is a new string which is the concatenation of the two strings.</p>
+      <p>It is not possible to concatenate <strong>&lt;string&gt; + &lt;numbers&gt; </strong>, Python will give you an error <pre><code>TypeError: cannot concatenate 'str' (string) and 'int' (integers)</code></pre>as it would not know what it means;</p>
+      <p>However you can multiply (*) <strong>&lt;string&gt; * &lt;numbers&gt; </strong></p>
+      <br>
+      <h3>Extracting from the string</h3>
+      <p>As a string is a sequence of characters, we can use the <code>&#91;&#93;</code> to extract part of that string. This can not be done if use directly characters.</p>
+      <p>The first character in the string is 0</p>
+      <pre><code>
+      &lt;string&gt;&#91;&lt;expression&gt;&#93;
+      </code></pre>
+      <p>The value of the expression can be anything that evaluates to a number</p>
+        <p><span class="code">name='Dave'</span>#wehre 0 is the D</p>
+        <p><code>print name[0]</code>#this will pring out the first letter of the name Dave, the D</p>
+        <p><code>print name[4]</code>#this will give an error as i am out of range in the string</p>
+        <p><code>print name [-1]</code>#when I give a  negative nr Ptython will start counting backword</p>
+      <br>
+      <h3>Selecting sub-sequences of a string</h3>
+      <p>We have already seen as</p>
+      <p>&lt;string&gt;&#91;&lt;expression&gt;(a number)&#93; equals to one single character string</p>
+      <p>Therefore introducing the colon (&#58;)
+      <p>&lt;string&gt;&#91;&lt;expression&gt;(a number)&#93;:&lt;expression&gt;(to another number)&#93; will instead produce a string of contineuous characters where the 1st expression is start 2nd expression is stop.
+      If we don't input the one of the expression in the above string, it will start or end from/to the beginning/end or continue until the end</p>
+      <br>
+      <h3>Find operation:</h3>
+      <P>This operator is actually a method
+      &lt;sting&gt;.find(&lt;string&gt;) this will give the numbers that give the first position in seach string where the target string appears
+      If the target string is not find anywhere in the search string the output will be -1</p>
+
+      <p>Which of these functions will always produce 0 result with any string?</p>
+        <pre>
+        s = '&lt;any sting&gt;'
+        print s.find(s)
+        print 's'.find('s')
+        print s.find('s')
+        print s.find('') #We are looking for the '' empty string. Therefore as no matter what string we use the empty strng will always be found
+        print s.find(s+'!!!')+1 #For this one for s+'!!!' will be the new string s!!! which will never be found in the sring s, therefore the result will be -1.
+                                Adding -1 to 1 gives 0
+        </pre>
+        <p>'text'.find('t')</p>
+        <P>('t') is called a &lt;parameter&gt;</p>
+        <p>&lt;string&gt;.find(&lt;string&gt;) can be more helpfull when we enter another parameter in the target string</p>
+        <p>&lt;string&gt;.find(&lt;string&gt;, &lt;number&gt;) the &lt;number&gt; it will tell to look for the serach parameter after a certain character</p>
+      </div>
+    </div>
+    <a href="#Top" class="back-to-top">Back to top</a>
+    <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+  </body>
+</html>
